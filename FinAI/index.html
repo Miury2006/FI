@@ -4,100 +4,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FinAI - Sua inteligência financeira pessoal</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Cabeçalho -->
   <header>
-    <nav>
-      <img src="logo-finai.png" alt="Logo FinAI">
-      <ul>
-        <li><a href="#funcionalidades">Funcionalidades</a></li>
-        <li><a href="#beneficios">Benefícios</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-      <a href="#login">Entrar</a>
-      <a href="#cadastro">Criar Conta</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#"><img src="logo-finai.png" alt="Logo FinAI" style="height: 50px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#funcionalidades">Funcionalidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#beneficios">Benefícios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <a class="btn btn-custom ms-2" href="#login">Entrar</a>
+      <a class="btn btn-custom ms-2" href="#cadastro">Criar Conta</a>
     </nav>
   </header>
 
-  <!-- Seção Principal -->
   <section class="hero">
-    <div class="texto-hero">
+    <div class="container text-center">
       <h1>FinAI: sua inteligência financeira pessoal</h1>
       <p>Controle suas finanças, evite golpes e economize com ajuda da IA.</p>
-      <a href="#cadastro">Comece agora</a>
-    </div>
-    <div class="imagem-hero">
-  </section>
-
-  <!-- Funcionalidades -->
-  <section id="funcionalidades">
-    <h2>O que o FinAI faz por você?</h2>
-    <div class="grid-funcoes">
-      <div class="funcao">
-        <img src="icone-contas.png" alt="Controle de contas">
-        <h3>Controle total de contas</h3>
-        <p>Boletos automáticos, alertas e integração com bancos.</p>
-      </div>
-      <div class="funcao">
-        <img src="icone-ia.png" alt="Inteligência Artificial">
-        <h3>IA que protege e economiza</h3>
-        <p>Detecta gastos suspeitos e prevê despesas futuras.</p>
-      </div>
-      <div class="funcao">
-        <img src="icone-direitos.png" alt="Economia legal">
-        <h3>Economia com seus direitos</h3>
-        <p>Descontos em contas e alerta de cobranças indevidas.</p>
-      </div>
-      <div class="funcao">
-        <img src="icone-alerta.png" alt="Alerta de apostas">
-        <h3>Alerta de golpes e apostas</h3>
-        <p>Avisa se você está gastando com sites perigosos ou não confiáveis.</p>
-      </div>
+      <a class="btn btn-custom" href="#cadastro">Comece agora</a>
     </div>
   </section>
 
-  <!-- Benefícios -->
+  <section id="funcionalidades" class="text-center">
+    <div class="container">
+      <h2>O que o FinAI faz por você?</h2>
+      <div class="grid-funcoes">
+        <div class="funcao card-custom">
+          <i class="bi bi-credit-card" style="font-size: 3rem; color: #ffb3ec;"></i>
+          <h3>Controle total de contas</h3>
+          <p>Boletos automáticos, alertas e integração com bancos.</p>
+        </div>
+        <div class="funcao card-custom">
+          <i class="bi bi-robot" style="font-size: 3rem; color: #ffb3ec;"></i>
+          <h3>IA que protege e economiza</h3>
+          <p>Detecta gastos suspeitos e prevê despesas futuras.</p>
+        </div>
+        <div class="funcao card-custom">
+          <i class="bi bi-briefcase" style="font-size: 3rem; color: #ffb3ec;"></i>
+          <h3>Economia com seus direitos</h3>
+          <p>Descontos em contas e alerta de cobranças indevidas.</p>
+        </div>
+        <div class="funcao card-custom">
+          <i class="bi bi-bullseye" style="font-size: 3rem; color: #ffb3ec;"></i>
+          <h3>Alerta de golpes e apostas</h3>
+          <p>Avisa se você está gastando com sites perigosos ou não confiáveis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="beneficios">
-    <h2>Benefícios para você</h2>
-    <ul>
-      <li> Evite juros por esquecimento</li>
-      <li> Receba alertas sobre seus direitos</li>
-      <li> Recompensas por boas práticas financeiras</li>
-      <li> Relatórios que ajudam você a entender sua vida financeira</li>
-    </ul>
+    <div class="container text-center">
+      <h2>Benefícios para você</h2>
+      <ul class="list-unstyled">
+        <li>Evite juros por esquecimento</li>
+        <li>Receba alertas sobre seus direitos</li>
+        <li>Recompensas por boas práticas financeiras</li>
+        <li>Relatórios que ajudam você a entender sua vida financeira</li>
+      </ul>
+    </div>
   </section>
 
-  <!-- Sobre -->
   <section id="sobre">
-    <h2>Por que escolher o FinAI?</h2>
-    <p>O FinAI não é só um organizador de contas. Ele é seu aliado para economizar, se proteger de golpes e aproveitar ao máximo os direitos que a maioria das pessoas desconhece.</p>
-    <p>Com IA avançada, ele analisa seus hábitos financeiros, alerta sobre armadilhas (como apostas, esquemas e apps perigosos), e ainda ajuda a negociar tarifas ou contestar cobranças.</p>
+    <div class="container text-center">
+      <h2>Por que escolher o FinAI?</h2>
+      <p>O FinAI não é só um organizador de contas. Ele é seu aliado para economizar, se proteger de golpes e aproveitar ao máximo os direitos que a maioria das pessoas desconhece.</p>
+      <p>Com IA avançada, ele analisa seus hábitos financeiros, alerta sobre armadilhas (como apostas, esquemas e apps perigosos), e ainda ajuda a negociar tarifas ou contestar cobranças.</p>
+    </div>
   </section>
 
-  <!-- Contato -->
   <section id="contato">
-    <h2>Fale com a gente</h2>
-    <p>Tem dúvidas, sugestões ou quer se tornar parceiro? Entre em contato conosco!</p>
-    <p>Email: contato@finai.com.br</p>
+    <div class="container text-center">
+      <h2>Fale com a gente</h2>
+      <p>Tem dúvidas, sugestões ou quer se tornar parceiro? Entre em contato conosco!</p>
+      <p>Email: contato@finai.com.br</p>
+    </div>
   </section>
 
-  <!-- Rodapé -->
   <footer>
-    <p>&copy; 2025 Matheus Iury. Todos os direitos reservados.</p>
-    <p>Contato direto: <strong>miury4529@gmail.com</strong></p>
-    
-    <ul>
-      <li><a href="#">Termos de uso</a></li>
-      <li><a href="#">Política de privacidade</a></li>
-      <li><a href="#">Contato</a></li>
-    </ul>
+    <div class="container text-center">
+      <p>&copy; 2025 Matheus Iury. Todos os direitos reservados.</p>
+      <p>Contato direto: <strong>miury4529@gmail.com</strong></p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Termos de uso</a></li>
+        <li class="list-inline-item"><a href="#">Política de privacidade</a></li>
+        <li class="list-inline-item"><a href="#">Contato</a></li>
+      </ul>
+    </div>
   </footer>
- 
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
